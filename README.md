@@ -5,40 +5,52 @@
 ![Native](https://img.shields.io/badge/native-C-555)
 ![License](https://img.shields.io/badge/license-MIT-blue)
 
-A Silvus-style embedded web interface project for managing MANET radios. It includes a Python network-management backend, a mobile-friendly JavaScript UI, a C-based link quality module, and UI/API test automation.
+A Silvus-style embedded web interface project for managing MANET radios. The stack combines a Python network-management backend, mobile-friendly JavaScript UI, a native C RF metric library, route analytics, and automated API/UI test coverage.
 
 ![Demo](docs/demo.svg)
 
-## Why This Matches the Role
-- **JavaScript + HTML**: responsive web interface for radio and link management.
-- **Python backend**: network control APIs and telemetry simulation loop.
-- **Mobile-friendly UI**: optimized layout and controls for tablet/field usage.
-- **UI test automation**: automated frontend rendering checks with `jsdom`.
-- **C programming**: native link-quality scoring function loaded via `ctypes`.
+## Why This Matches the Embedded Web Interface Role
+- **JavaScript + HTML**: responsive, field-usable network control interface.
+- **Python backend**: control-plane APIs, telemetry simulator, and topology/routing logic.
+- **Mobile web development**: adaptive layout designed for tablets and laptops.
+- **UI test automation**: deterministic `jsdom` tests for rendering and state updates.
+- **C programming**: native link-quality and capacity estimation loaded via `ctypes`.
 
-## Features
-- Real-time topology map with stable/degraded link visualization.
-- Node-level controls:
-  - TX power updates
-  - channel changes
-  - reboot command
-- KPI dashboard:
-  - online/degraded nodes
-  - average battery
-  - average link score
-  - degraded link count
-- REST + SSE API for network state and live updates.
+## Advanced Features Added
+- Real-time topology map with live link quality overlays.
+- Rich per-link telemetry:
+  - quality score
+  - ETX estimate
+  - latency estimate
+  - throughput estimate
+- Multi-hop route analysis (`src -> dst`) via Dijkstra over dynamic link costs.
+- Auto channel optimization endpoint with evented change tracking.
+- R1 routing summary table with latency and bottleneck throughput.
+- Event log stream (node health, updates, optimization events, telemetry snapshots).
+- Node controls for TX power, channel assignment, and reboot simulation.
+
+## API Surface
+- `GET /api/health`
+- `GET /api/state`
+- `GET /api/route?src=R1&dst=R5`
+- `GET /api/events/log`
+- `GET /api/events` (SSE)
+- `POST /api/node/<id>/tx_power`
+- `POST /api/node/<id>/channel`
+- `POST /api/node/<id>/reboot`
+- `POST /api/network/optimize_channels`
 
 ## Architecture
 ```mermaid
 flowchart LR
-  A[Web UI (JS/HTML)] -->|REST/SSE| B[Python Control Server]
+  A[Web UI (JS/HTML/CSS)] -->|REST/SSE| B[Python Control Server]
   B --> C[MANET Simulator]
-  C --> D[C Link Metric Engine]
-  B --> E[Node + Link State]
+  C --> D[Link Graph + Route Engine]
+  C --> E[C RF Metric Library]
+  D --> F[Routing Summary + KPIs]
 ```
 
-Key files:
+Core files:
 - `/Users/mo/Downloads/manet-radio-web-console/backend/server.py`
 - `/Users/mo/Downloads/manet-radio-web-console/backend/manet_sim.py`
 - `/Users/mo/Downloads/manet-radio-web-console/backend/native_bridge.py`
@@ -72,8 +84,9 @@ npm run test:ui
 ```
 
 ## Notes
-- Native C library is optional; Python fallback metric is used if the shared object is absent.
-- This project is a simulation environment intentionally shaped like embedded network-management software.
+- Native C library is optional; Python fallback metrics are used when shared object is absent.
+- Route computation currently uses a shortest-path heuristic over ETX and latency cost.
+- The simulator is intentionally structured to mirror embedded network-management software workflows.
 
 ## Author
 Mo Shirmohammadi

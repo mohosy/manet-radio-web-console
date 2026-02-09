@@ -7,7 +7,7 @@ import time
 from http import HTTPStatus
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
-from urllib.parse import urlparse
+from urllib.parse import parse_qs, urlparse
 
 from .manet_sim import ManetSimulator
 
@@ -46,6 +46,20 @@ class ManetHandler(SimpleHTTPRequestHandler):
             _json_response(self, HTTPStatus.OK, self.context.sim.state())
             return
 
+        if parsed.path == "/api/events/log":
+            _json_response(self, HTTPStatus.OK, {"events": self.context.sim.event_log()})
+            return
+
+        if parsed.path == "/api/route":
+            params = parse_qs(parsed.query)
+            src = params.get("src", [""])[0]
+            dst = params.get("dst", [""])[0]
+            if not src or not dst:
+                _json_response(self, HTTPStatus.BAD_REQUEST, {"error": "missing-src-dst"})
+                return
+            _json_response(self, HTTPStatus.OK, self.context.sim.route(src, dst))
+            return
+
         if parsed.path == "/api/events":
             self.send_response(HTTPStatus.OK)
             self.send_header("Content-Type", "text/event-stream")
@@ -54,12 +68,15 @@ class ManetHandler(SimpleHTTPRequestHandler):
             self.end_headers()
 
             # Push state snapshots every 1s; browser auto-reconnect handles disconnects.
-            for _ in range(120):
+            for _ in range(180):
                 if not self.context.running:
                     break
                 payload = json.dumps(self.context.sim.state())
-                self.wfile.write(f"data: {payload}\n\n".encode("utf-8"))
-                self.wfile.flush()
+                try:
+                    self.wfile.write(f"data: {payload}\n\n".encode("utf-8"))
+                    self.wfile.flush()
+                except (BrokenPipeError, ConnectionResetError):
+                    break
                 time.sleep(1.0)
             return
 
@@ -70,6 +87,11 @@ class ManetHandler(SimpleHTTPRequestHandler):
 
     def do_POST(self) -> None:
         parsed = urlparse(self.path)
+
+        if parsed.path == "/api/network/optimize_channels":
+            _json_response(self, HTTPStatus.OK, self.context.sim.optimize_channels())
+            return
+
         if not parsed.path.startswith("/api/node/"):
             _json_response(self, HTTPStatus.NOT_FOUND, {"error": "not-found"})
             return

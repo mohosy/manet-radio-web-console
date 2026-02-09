@@ -15,7 +15,10 @@
         <p class="eyebrow">Embedded Network Management</p>
         <h1>MANET Radio Web Console</h1>
       </div>
-      <button id="refresh-btn" class="ghost">Refresh Snapshot</button>
+      <div class="toolbar">
+        <button id="refresh-btn" class="ghost">Refresh Snapshot</button>
+        <button id="optimize-btn" class="ghost">Optimize Channels</button>
+      </div>
     </header>
 
     <main class="layout">
@@ -37,6 +40,31 @@
         <div id="nodes-list" class="nodes-list"></div>
       </section>
 
+      <section class="panel panel-route">
+        <h2>Route Analysis</h2>
+        <div class="route-controls">
+          <select id="route-src"></select>
+          <select id="route-dst"></select>
+          <button id="route-btn">Analyze</button>
+        </div>
+        <pre id="route-output" class="route-output">Select src/dst and analyze route.</pre>
+
+        <h3>R1 Routing Summary</h3>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Dest</th>
+                <th>Path</th>
+                <th>Latency</th>
+                <th>Bottleneck</th>
+              </tr>
+            </thead>
+            <tbody id="routes-body"></tbody>
+          </table>
+        </div>
+      </section>
+
       <section class="panel panel-links">
         <h2>Link Table</h2>
         <div class="table-wrap">
@@ -46,12 +74,20 @@
                 <th>A</th>
                 <th>B</th>
                 <th>Score</th>
+                <th>ETX</th>
+                <th>Latency</th>
+                <th>Mbps</th>
                 <th>Status</th>
               </tr>
             </thead>
             <tbody id="links-body"></tbody>
           </table>
         </div>
+      </section>
+
+      <section class="panel panel-events">
+        <h2>Event Log</h2>
+        <div id="events-list" class="events-list"></div>
       </section>
     </main>
 

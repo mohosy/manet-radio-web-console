@@ -17,6 +17,11 @@ class NativeMetricTests(unittest.TestCase):
         far = metric.score(distance_m=200.0, tx_power_dbm=24.0, noise_floor_dbm=-92.0, same_channel=True)
         self.assertGreater(near, far)
 
+    def test_capacity_increases_with_quality(self):
+        low = metric.capacity_mbps(quality=0.2, channel_width_mhz=20.0, mimo_streams=2)
+        high = metric.capacity_mbps(quality=0.8, channel_width_mhz=20.0, mimo_streams=2)
+        self.assertGreater(high, low)
+
 
 if __name__ == "__main__":
     unittest.main()

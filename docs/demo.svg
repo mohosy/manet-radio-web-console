@@ -11,9 +11,9 @@
   <text x="44" y="60" fill="#2dd4bf" font-size="13" font-family="JetBrains Mono, monospace">EMBEDDED NETWORK MANAGEMENT</text>
   <text x="44" y="90" fill="#e7edf8" font-size="28" font-family="Space Grotesk, sans-serif">MANET Radio Web Console</text>
 
-  <rect x="44" y="116" width="730" height="280" rx="12" fill="#12243e" stroke="#355378" />
+  <rect x="44" y="116" width="730" height="270" rx="12" fill="#12243e" stroke="#355378" />
   <text x="62" y="144" fill="#d9e7f7" font-size="16" font-family="Space Grotesk, sans-serif">Topology Map</text>
-  <text x="690" y="144" fill="#9eb2ce" font-size="13" font-family="JetBrains Mono, monospace">Tick 212</text>
+  <text x="690" y="144" fill="#9eb2ce" font-size="13" font-family="JetBrains Mono, monospace">Tick 368</text>
 
   <line x1="150" y1="210" x2="290" y2="250" stroke="#2dd4bf" stroke-width="3"/>
   <line x1="290" y1="250" x2="460" y2="300" stroke="#2dd4bf" stroke-width="3"/>
@@ -32,36 +32,29 @@
   <text x="375" y="354" fill="#e7edf8" font-size="12" font-family="JetBrains Mono, monospace">R4</text>
   <text x="635" y="334" fill="#e7edf8" font-size="12" font-family="JetBrains Mono, monospace">R5</text>
 
-  <rect x="790" y="116" width="366" height="280" rx="12" fill="#12243e" stroke="#355378" />
+  <rect x="790" y="116" width="366" height="270" rx="12" fill="#12243e" stroke="#355378" />
   <text x="808" y="144" fill="#e7edf8" font-size="16" font-family="Space Grotesk, sans-serif">Network KPIs</text>
+  <text x="808" y="176" fill="#d9e7f7" font-size="13" font-family="JetBrains Mono, monospace">online_nodes: 4</text>
+  <text x="808" y="202" fill="#d9e7f7" font-size="13" font-family="JetBrains Mono, monospace">connectivity_ratio: 1.00</text>
+  <text x="808" y="228" fill="#d9e7f7" font-size="13" font-family="JetBrains Mono, monospace">avg_link_score: 0.64</text>
+  <text x="808" y="254" fill="#d9e7f7" font-size="13" font-family="JetBrains Mono, monospace">avg_latency_ms: 8.10</text>
+  <text x="808" y="280" fill="#d9e7f7" font-size="13" font-family="JetBrains Mono, monospace">avg_capacity_mbps: 47.82</text>
+  <text x="808" y="306" fill="#d9e7f7" font-size="13" font-family="JetBrains Mono, monospace">degraded_links: 2</text>
 
-  <rect x="808" y="160" width="166" height="90" rx="10" fill="#1a2640" />
-  <text x="820" y="184" fill="#9eb2ce" font-size="12" font-family="JetBrains Mono, monospace">ONLINE NODES</text>
-  <text x="820" y="222" fill="#e7edf8" font-size="28" font-family="Space Grotesk, sans-serif">4</text>
+  <rect x="44" y="402" width="550" height="254" rx="12" fill="#12243e" stroke="#355378" />
+  <text x="62" y="430" fill="#e7edf8" font-size="16" font-family="Space Grotesk, sans-serif">Node Controls</text>
+  <text x="62" y="460" fill="#d9e7f7" font-size="13" font-family="JetBrains Mono, monospace">R1  CH=1  TX=26.0  Queue=11  FW=2.4.1   [Apply] [Reboot]</text>
+  <text x="62" y="486" fill="#d9e7f7" font-size="13" font-family="JetBrains Mono, monospace">R2  CH=3  TX=24.0  Queue=17  FW=2.4.1   [Apply] [Reboot]</text>
+  <text x="62" y="512" fill="#d9e7f7" font-size="13" font-family="JetBrains Mono, monospace">R3  CH=6  TX=23.0  Queue=8   FW=2.4.0   [Apply] [Reboot]</text>
+  <text x="62" y="538" fill="#d9e7f7" font-size="13" font-family="JetBrains Mono, monospace">R4  CH=9  TX=22.0  Queue=13  FW=2.3.9   [Apply] [Reboot]</text>
 
-  <rect x="986" y="160" width="152" height="90" rx="10" fill="#1a2640" />
-  <text x="998" y="184" fill="#9eb2ce" font-size="12" font-family="JetBrains Mono, monospace">AVG LINK</text>
-  <text x="998" y="222" fill="#e7edf8" font-size="28" font-family="Space Grotesk, sans-serif">0.62</text>
+  <rect x="610" y="402" width="546" height="122" rx="12" fill="#12243e" stroke="#355378" />
+  <text x="628" y="430" fill="#e7edf8" font-size="16" font-family="Space Grotesk, sans-serif">Route Analysis</text>
+  <text x="628" y="458" fill="#7ff2cf" font-size="13" font-family="JetBrains Mono, monospace">R1 -> R5</text>
+  <text x="628" y="484" fill="#d9e7f7" font-size="13" font-family="JetBrains Mono, monospace">path: R1 -> R2 -> R5   latency: 12.40ms   bottleneck: 39.20Mbps</text>
 
-  <rect x="808" y="262" width="166" height="90" rx="10" fill="#1a2640" />
-  <text x="820" y="286" fill="#9eb2ce" font-size="12" font-family="JetBrains Mono, monospace">AVG BATTERY</text>
-  <text x="820" y="324" fill="#e7edf8" font-size="28" font-family="Space Grotesk, sans-serif">95%</text>
-
-  <rect x="986" y="262" width="152" height="90" rx="10" fill="#1a2640" />
-  <text x="998" y="286" fill="#9eb2ce" font-size="12" font-family="JetBrains Mono, monospace">DEG LINKS</text>
-  <text x="998" y="324" fill="#e7edf8" font-size="28" font-family="Space Grotesk, sans-serif">2</text>
-
-  <rect x="44" y="414" width="550" height="242" rx="12" fill="#12243e" stroke="#355378" />
-  <text x="62" y="442" fill="#e7edf8" font-size="16" font-family="Space Grotesk, sans-serif">Node Controls</text>
-  <text x="62" y="472" fill="#d9e7f7" font-size="13" font-family="JetBrains Mono, monospace">R1 (CH 1) TX 26.0 dBm Battery 98.4% [Apply] [Reboot]</text>
-  <text x="62" y="500" fill="#d9e7f7" font-size="13" font-family="JetBrains Mono, monospace">R2 (CH 1) TX 24.0 dBm Battery 97.1% [Apply] [Reboot]</text>
-  <text x="62" y="528" fill="#d9e7f7" font-size="13" font-family="JetBrains Mono, monospace">R3 (CH 1) TX 23.0 dBm Battery 96.0% [Apply] [Reboot]</text>
-  <text x="62" y="556" fill="#d9e7f7" font-size="13" font-family="JetBrains Mono, monospace">R4 (CH 6) TX 22.0 dBm Battery 94.2% [Apply] [Reboot]</text>
-
-  <rect x="610" y="414" width="546" height="242" rx="12" fill="#12243e" stroke="#355378" />
-  <text x="628" y="442" fill="#e7edf8" font-size="16" font-family="Space Grotesk, sans-serif">Link Table</text>
-  <text x="628" y="472" fill="#9eb2ce" font-size="12" font-family="JetBrains Mono, monospace">A    B    SCORE     STATUS</text>
-  <text x="628" y="500" fill="#d9e7f7" font-size="13" font-family="JetBrains Mono, monospace">R1   R2   0.8120    stable</text>
-  <text x="628" y="526" fill="#d9e7f7" font-size="13" font-family="JetBrains Mono, monospace">R2   R3   0.7411    stable</text>
-  <text x="628" y="552" fill="#d9e7f7" font-size="13" font-family="JetBrains Mono, monospace">R2   R4   0.3925    degraded</text>
+  <rect x="610" y="534" width="546" height="122" rx="12" fill="#12243e" stroke="#355378" />
+  <text x="628" y="562" fill="#e7edf8" font-size="16" font-family="Space Grotesk, sans-serif">Event Log</text>
+  <text x="628" y="590" fill="#d9e7f7" font-size="13" font-family="JetBrains Mono, monospace">tick=365 kind=channel-optimize  automatic channel plan applied</text>
+  <text x="628" y="616" fill="#d9e7f7" font-size="13" font-family="JetBrains Mono, monospace">tick=366 kind=node-update       R2 tx_power updated</text>
 </svg>

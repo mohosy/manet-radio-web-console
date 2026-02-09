@@ -39,16 +39,31 @@ class ApiTests(unittest.TestCase):
         with request.urlopen(req, timeout=3.0) as resp:
             return json.loads(resp.read().decode("utf-8"))
 
-    def test_state_endpoint(self):
+    def test_state_endpoint_contains_advanced_sections(self):
         payload = self._get_json("/api/state")
         self.assertIn("nodes", payload)
         self.assertIn("links", payload)
         self.assertIn("kpis", payload)
+        self.assertIn("routing", payload)
+        self.assertIn("events", payload)
 
     def test_update_tx_power(self):
         payload = self._post_json("/api/node/R1/tx_power", {"value": 30})
         nodes = {n["node_id"]: n for n in payload["nodes"]}
         self.assertAlmostEqual(nodes["R1"]["tx_power_dbm"], 30.0)
+
+    def test_route_endpoint(self):
+        route = self._get_json("/api/route?src=R1&dst=R5")
+        self.assertIn("reachable", route)
+        self.assertIn("src", route)
+        self.assertIn("dst", route)
+        self.assertEqual(route["src"], "R1")
+        self.assertEqual(route["dst"], "R5")
+
+    def test_channel_optimization_endpoint(self):
+        result = self._post_json("/api/network/optimize_channels", {})
+        self.assertIn("changed", result)
+        self.assertIn("kpis", result)
 
 
 if __name__ == "__main__":

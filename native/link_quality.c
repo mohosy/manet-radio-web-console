@@ -23,3 +23,24 @@ double link_quality_score(double distance_m, double tx_power_dbm, double noise_f
     }
     return quality;
 }
+
+// Returns an estimated link capacity in Mbps from quality and RF profile.
+double link_capacity_mbps(double quality, double channel_width_mhz, int mimo_streams) {
+    if (quality < 0.0) {
+        quality = 0.0;
+    }
+    if (quality > 1.0) {
+        quality = 1.0;
+    }
+    if (channel_width_mhz < 1.0) {
+        channel_width_mhz = 1.0;
+    }
+    if (mimo_streams < 1) {
+        mimo_streams = 1;
+    }
+
+    // Coarse estimate: usable spectral efficiency scales with quality.
+    double spectral_eff = 0.5 + 4.5 * quality;
+    double capacity = channel_width_mhz * spectral_eff * mimo_streams * 0.45;
+    return capacity < 0.0 ? 0.0 : capacity;
+}
