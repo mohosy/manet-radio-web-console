@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "manet-radio-web-console"
+version = "1.0.0"
+description = "Mobile-friendly MANET radio web interface and network management simulator"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "Mo Shirmohammadi"}]
+
+[project.scripts]
+manet-console = "backend.server:main"
+
+[tool.setuptools]
+packages = ["backend"]

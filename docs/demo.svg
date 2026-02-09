@@ -1,0 +1,67 @@
+<svg width="1200" height="700" viewBox="0 0 1200 700" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#060b17" />
+      <stop offset="100%" stop-color="#11203a" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="700" rx="24" fill="url(#bg)" />
+  <rect x="20" y="20" width="1160" height="660" rx="16" fill="#0f1c31" stroke="#365173" stroke-width="2" />
+
+  <text x="44" y="60" fill="#2dd4bf" font-size="13" font-family="JetBrains Mono, monospace">EMBEDDED NETWORK MANAGEMENT</text>
+  <text x="44" y="90" fill="#e7edf8" font-size="28" font-family="Space Grotesk, sans-serif">MANET Radio Web Console</text>
+
+  <rect x="44" y="116" width="730" height="280" rx="12" fill="#12243e" stroke="#355378" />
+  <text x="62" y="144" fill="#d9e7f7" font-size="16" font-family="Space Grotesk, sans-serif">Topology Map</text>
+  <text x="690" y="144" fill="#9eb2ce" font-size="13" font-family="JetBrains Mono, monospace">Tick 212</text>
+
+  <line x1="150" y1="210" x2="290" y2="250" stroke="#2dd4bf" stroke-width="3"/>
+  <line x1="290" y1="250" x2="460" y2="300" stroke="#2dd4bf" stroke-width="3"/>
+  <line x1="290" y1="250" x2="360" y2="350" stroke="#f59e0b" stroke-width="2"/>
+  <line x1="460" y1="300" x2="620" y2="330" stroke="#2dd4bf" stroke-width="3"/>
+
+  <circle cx="150" cy="210" r="10" fill="#5eead4"/>
+  <circle cx="290" cy="250" r="10" fill="#5eead4"/>
+  <circle cx="460" cy="300" r="10" fill="#5eead4"/>
+  <circle cx="360" cy="350" r="10" fill="#fbbf24"/>
+  <circle cx="620" cy="330" r="10" fill="#5eead4"/>
+
+  <text x="165" y="214" fill="#e7edf8" font-size="12" font-family="JetBrains Mono, monospace">R1</text>
+  <text x="305" y="254" fill="#e7edf8" font-size="12" font-family="JetBrains Mono, monospace">R2</text>
+  <text x="475" y="304" fill="#e7edf8" font-size="12" font-family="JetBrains Mono, monospace">R3</text>
+  <text x="375" y="354" fill="#e7edf8" font-size="12" font-family="JetBrains Mono, monospace">R4</text>
+  <text x="635" y="334" fill="#e7edf8" font-size="12" font-family="JetBrains Mono, monospace">R5</text>
+
+  <rect x="790" y="116" width="366" height="280" rx="12" fill="#12243e" stroke="#355378" />
+  <text x="808" y="144" fill="#e7edf8" font-size="16" font-family="Space Grotesk, sans-serif">Network KPIs</text>
+
+  <rect x="808" y="160" width="166" height="90" rx="10" fill="#1a2640" />
+  <text x="820" y="184" fill="#9eb2ce" font-size="12" font-family="JetBrains Mono, monospace">ONLINE NODES</text>
+  <text x="820" y="222" fill="#e7edf8" font-size="28" font-family="Space Grotesk, sans-serif">4</text>
+
+  <rect x="986" y="160" width="152" height="90" rx="10" fill="#1a2640" />
+  <text x="998" y="184" fill="#9eb2ce" font-size="12" font-family="JetBrains Mono, monospace">AVG LINK</text>
+  <text x="998" y="222" fill="#e7edf8" font-size="28" font-family="Space Grotesk, sans-serif">0.62</text>
+
+  <rect x="808" y="262" width="166" height="90" rx="10" fill="#1a2640" />
+  <text x="820" y="286" fill="#9eb2ce" font-size="12" font-family="JetBrains Mono, monospace">AVG BATTERY</text>
+  <text x="820" y="324" fill="#e7edf8" font-size="28" font-family="Space Grotesk, sans-serif">95%</text>
+
+  <rect x="986" y="262" width="152" height="90" rx="10" fill="#1a2640" />
+  <text x="998" y="286" fill="#9eb2ce" font-size="12" font-family="JetBrains Mono, monospace">DEG LINKS</text>
+  <text x="998" y="324" fill="#e7edf8" font-size="28" font-family="Space Grotesk, sans-serif">2</text>
+
+  <rect x="44" y="414" width="550" height="242" rx="12" fill="#12243e" stroke="#355378" />
+  <text x="62" y="442" fill="#e7edf8" font-size="16" font-family="Space Grotesk, sans-serif">Node Controls</text>
+  <text x="62" y="472" fill="#d9e7f7" font-size="13" font-family="JetBrains Mono, monospace">R1 (CH 1) TX 26.0 dBm Battery 98.4% [Apply] [Reboot]</text>
+  <text x="62" y="500" fill="#d9e7f7" font-size="13" font-family="JetBrains Mono, monospace">R2 (CH 1) TX 24.0 dBm Battery 97.1% [Apply] [Reboot]</text>
+  <text x="62" y="528" fill="#d9e7f7" font-size="13" font-family="JetBrains Mono, monospace">R3 (CH 1) TX 23.0 dBm Battery 96.0% [Apply] [Reboot]</text>
+  <text x="62" y="556" fill="#d9e7f7" font-size="13" font-family="JetBrains Mono, monospace">R4 (CH 6) TX 22.0 dBm Battery 94.2% [Apply] [Reboot]</text>
+
+  <rect x="610" y="414" width="546" height="242" rx="12" fill="#12243e" stroke="#355378" />
+  <text x="628" y="442" fill="#e7edf8" font-size="16" font-family="Space Grotesk, sans-serif">Link Table</text>
+  <text x="628" y="472" fill="#9eb2ce" font-size="12" font-family="JetBrains Mono, monospace">A    B    SCORE     STATUS</text>
+  <text x="628" y="500" fill="#d9e7f7" font-size="13" font-family="JetBrains Mono, monospace">R1   R2   0.8120    stable</text>
+  <text x="628" y="526" fill="#d9e7f7" font-size="13" font-family="JetBrains Mono, monospace">R2   R3   0.7411    stable</text>
+  <text x="628" y="552" fill="#d9e7f7" font-size="13" font-family="JetBrains Mono, monospace">R2   R4   0.3925    degraded</text>
+</svg>
