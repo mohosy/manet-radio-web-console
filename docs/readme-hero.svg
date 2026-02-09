@@ -1,0 +1,43 @@
+<svg width="1280" height="460" viewBox="0 0 1280 460" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0A1324"/>
+      <stop offset="100%" stop-color="#142B49"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="460" rx="22" fill="url(#bg)"/>
+  <rect x="26" y="24" width="1228" height="412" rx="18" fill="#0C1A31" stroke="#39547A" stroke-width="2"/>
+
+  <text x="58" y="88" fill="#2DD4BF" font-size="14" font-family="JetBrains Mono, monospace">EMBEDDED SOFTWARE • NETWORK MANAGEMENT • MANET</text>
+  <text x="58" y="132" fill="#E7EDF8" font-size="44" font-family="Space Grotesk, sans-serif">MANET Radio Web Console</text>
+  <text x="58" y="170" fill="#9EB2CE" font-size="20" font-family="Space Grotesk, sans-serif">Silvus-style embedded web interface with Python control APIs, C RF metrics,</text>
+  <text x="58" y="198" fill="#9EB2CE" font-size="20" font-family="Space Grotesk, sans-serif">route analytics, live telemetry, and UI/API automation tests.</text>
+
+  <rect x="58" y="232" width="360" height="86" rx="12" fill="#152744" stroke="#3A5A84"/>
+  <text x="80" y="264" fill="#9EB2CE" font-size="13" font-family="JetBrains Mono, monospace">REAL-TIME TELEMETRY</text>
+  <text x="80" y="297" fill="#E7EDF8" font-size="28" font-family="Space Grotesk, sans-serif">SSE + REST Control Plane</text>
+
+  <rect x="438" y="232" width="360" height="86" rx="12" fill="#152744" stroke="#3A5A84"/>
+  <text x="460" y="264" fill="#9EB2CE" font-size="13" font-family="JetBrains Mono, monospace">ROUTING INTELLIGENCE</text>
+  <text x="460" y="297" fill="#E7EDF8" font-size="28" font-family="Space Grotesk, sans-serif">Dijkstra + ETX/Latency</text>
+
+  <rect x="818" y="232" width="400" height="86" rx="12" fill="#152744" stroke="#3A5A84"/>
+  <text x="840" y="264" fill="#9EB2CE" font-size="13" font-family="JetBrains Mono, monospace">NATIVE PERFORMANCE BLOCK</text>
+  <text x="840" y="297" fill="#E7EDF8" font-size="28" font-family="Space Grotesk, sans-serif">C Link Quality + Capacity Engine</text>
+
+  <rect x="58" y="338" width="180" height="62" rx="10" fill="#1A3152"/>
+  <text x="76" y="366" fill="#9EB2CE" font-size="12" font-family="JetBrains Mono, monospace">API ENDPOINTS</text>
+  <text x="76" y="390" fill="#E7EDF8" font-size="24" font-family="Space Grotesk, sans-serif">9</text>
+
+  <rect x="258" y="338" width="180" height="62" rx="10" fill="#1A3152"/>
+  <text x="276" y="366" fill="#9EB2CE" font-size="12" font-family="JetBrains Mono, monospace">AUTOMATED TESTS</text>
+  <text x="276" y="390" fill="#E7EDF8" font-size="24" font-family="Space Grotesk, sans-serif">8</text>
+
+  <rect x="458" y="338" width="180" height="62" rx="10" fill="#1A3152"/>
+  <text x="476" y="366" fill="#9EB2CE" font-size="12" font-family="JetBrains Mono, monospace">STACK</text>
+  <text x="476" y="390" fill="#E7EDF8" font-size="24" font-family="Space Grotesk, sans-serif">JS + Python + C</text>
+
+  <rect x="658" y="338" width="240" height="62" rx="10" fill="#1A3152"/>
+  <text x="676" y="366" fill="#9EB2CE" font-size="12" font-family="JetBrains Mono, monospace">PRIMARY USE CASE</text>
+  <text x="676" y="390" fill="#E7EDF8" font-size="24" font-family="Space Grotesk, sans-serif">Radio Fleet Management</text>
+</svg>

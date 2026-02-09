@@ -1,56 +1,85 @@
-# MANET Radio Web Console
+<div align="center">
+  <img src="docs/readme-hero.svg" alt="MANET Radio Web Console Hero" width="100%" />
+</div>
 
-![Language](https://img.shields.io/badge/frontend-JavaScript%20%2B%20HTML%2FCSS-f7df1e)
-![Backend](https://img.shields.io/badge/backend-Python-3776AB)
-![Native](https://img.shields.io/badge/native-C-555)
-![License](https://img.shields.io/badge/license-MIT-blue)
+<div align="center">
 
-A Silvus-style embedded web interface project for managing MANET radios. The stack combines a Python network-management backend, mobile-friendly JavaScript UI, a native C RF metric library, route analytics, and automated API/UI test coverage.
+![Frontend](https://img.shields.io/badge/Frontend-JavaScript%20%2B%20HTML%2FCSS-f7df1e)
+![Backend](https://img.shields.io/badge/Backend-Python-3776AB)
+![Native](https://img.shields.io/badge/Native-C-6b7280)
+![Transport](https://img.shields.io/badge/Realtime-SSE%20%2B%20REST-14b8a6)
+![License](https://img.shields.io/badge/License-MIT-blue)
 
-![Demo](docs/demo.svg)
+</div>
 
-## Why This Matches the Embedded Web Interface Role
-- **JavaScript + HTML**: responsive, field-usable network control interface.
-- **Python backend**: control-plane APIs, telemetry simulator, and topology/routing logic.
-- **Mobile web development**: adaptive layout designed for tablets and laptops.
-- **UI test automation**: deterministic `jsdom` tests for rendering and state updates.
-- **C programming**: native link-quality and capacity estimation loaded via `ctypes`.
+A production-style, **embedded network management console** for MANET radios. It is designed to align directly with web-interface embedded roles: mobile-first frontend, Python control-plane services, C-native RF metrics, route intelligence, and test automation.
 
-## Advanced Features Added
-- Real-time topology map with live link quality overlays.
-- Rich per-link telemetry:
-  - quality score
-  - ETX estimate
-  - latency estimate
-  - throughput estimate
-- Multi-hop route analysis (`src -> dst`) via Dijkstra over dynamic link costs.
-- Auto channel optimization endpoint with evented change tracking.
-- R1 routing summary table with latency and bottleneck throughput.
-- Event log stream (node health, updates, optimization events, telemetry snapshots).
-- Node controls for TX power, channel assignment, and reboot simulation.
+## Visual Walkthrough
+
+<div align="center">
+  <img src="docs/demo.svg" alt="Main dashboard" width="100%" />
+</div>
+
+<div align="center">
+  <img src="docs/readme-panels.svg" alt="Feature panels" width="100%" />
+</div>
+
+<div align="center">
+  <img src="docs/readme-architecture.svg" alt="Architecture" width="100%" />
+</div>
+
+## Feature Highlights
+
+| Area | What It Demonstrates |
+|---|---|
+| Topology + RF Telemetry | Per-link `score`, `ETX`, `latency`, `throughput`, `distance` |
+| Route Analytics | Dijkstra-based multi-hop routing with bottleneck throughput + latency |
+| Channel Optimization | Automatic channel planning endpoint + change events |
+| Node Ops | TX power, channel assignment, reboot simulation |
+| Event Timeline | Operational logs for config updates, health transitions, optimization |
+| Automation | Python API tests + UI rendering tests (`jsdom`) |
 
 ## API Surface
-- `GET /api/health`
-- `GET /api/state`
-- `GET /api/route?src=R1&dst=R5`
-- `GET /api/events/log`
-- `GET /api/events` (SSE)
-- `POST /api/node/<id>/tx_power`
-- `POST /api/node/<id>/channel`
-- `POST /api/node/<id>/reboot`
-- `POST /api/network/optimize_channels`
 
-## Architecture
-```mermaid
-flowchart LR
-  A[Web UI (JS/HTML/CSS)] -->|REST/SSE| B[Python Control Server]
-  B --> C[MANET Simulator]
-  C --> D[Link Graph + Route Engine]
-  C --> E[C RF Metric Library]
-  D --> F[Routing Summary + KPIs]
+```text
+GET  /api/health
+GET  /api/state
+GET  /api/route?src=<id>&dst=<id>
+GET  /api/events/log
+GET  /api/events               (SSE)
+POST /api/node/<id>/tx_power
+POST /api/node/<id>/channel
+POST /api/node/<id>/reboot
+POST /api/network/optimize_channels
 ```
 
-Core files:
+## Technical Depth
+
+- Frontend: real-time rendering of topology, routes, KPIs, and operational events.
+- Backend: simulation tick loop, route engine, telemetry synthesis, and control APIs.
+- Native C: link quality and capacity functions consumed via `ctypes` bridge.
+- Routing model: shortest path over a dynamic weighted graph (`ETX + latency`).
+
+## Quick Start
+
+```bash
+cd /Users/mo/Downloads/manet-radio-web-console
+./scripts/build_native.sh
+python3 -m backend.server --host 127.0.0.1 --port 8088
+```
+
+Open `http://127.0.0.1:8088`
+
+## Test
+
+```bash
+python3 -m unittest discover -s tests -p 'test_*.py' -v
+npm install
+npm run test:ui
+```
+
+## Core Code Map
+
 - `/Users/mo/Downloads/manet-radio-web-console/backend/server.py`
 - `/Users/mo/Downloads/manet-radio-web-console/backend/manet_sim.py`
 - `/Users/mo/Downloads/manet-radio-web-console/backend/native_bridge.py`
@@ -59,35 +88,14 @@ Core files:
 - `/Users/mo/Downloads/manet-radio-web-console/tests/test_api.py`
 - `/Users/mo/Downloads/manet-radio-web-console/tests/ui.test.mjs`
 
-## Run
-```bash
-cd /Users/mo/Downloads/manet-radio-web-console
-./scripts/build_native.sh
-python3 -m backend.server --host 127.0.0.1 --port 8088
-```
+## Interview Demo Script (60 seconds)
 
-Open:
-```text
-http://127.0.0.1:8088
-```
-
-## Test
-Python API/native tests:
-```bash
-python3 -m unittest discover -s tests -p 'test_*.py' -v
-```
-
-UI automation tests:
-```bash
-npm install
-npm run test:ui
-```
-
-## Notes
-- Native C library is optional; Python fallback metrics are used when shared object is absent.
-- Route computation currently uses a shortest-path heuristic over ETX and latency cost.
-- The simulator is intentionally structured to mirror embedded network-management software workflows.
+1. Show live topology and link telemetry panel.
+2. Trigger `Optimize Channels` and point to changed network KPIs.
+3. Run route analysis (`R1 -> R5`) and explain hop-by-hop bottleneck/latency.
+4. Reboot one node and show event timeline + recovery.
 
 ## Author
+
 Mo Shirmohammadi
 - GitHub: [github.com/mohosy](https://github.com/mohosy)
