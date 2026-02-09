@@ -1,0 +1,56 @@
+<svg width="1400" height="700" viewBox="0 0 1400 700" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1400" height="700" rx="24" fill="#081426"/>
+  <rect x="24" y="24" width="1352" height="652" rx="20" fill="#0E213B" stroke="#3B5E86" stroke-width="2"/>
+
+  <text x="56" y="84" fill="#EAF1FB" font-size="36" font-family="Space Grotesk, sans-serif">Role-Fit Matrix (Silvus-style Web Interface Role)</text>
+  <text x="56" y="116" fill="#B6CAE3" font-size="16" font-family="Space Grotesk, sans-serif">Each requirement is linked to a concrete artifact in this repo.</text>
+
+  <rect x="56" y="152" width="344" height="484" rx="14" fill="#17385F" stroke="#4F78A8"/>
+  <text x="80" y="188" fill="#9FC0E3" font-size="13" font-family="JetBrains Mono, monospace">JOB REQUIREMENT</text>
+  <text x="80" y="224" fill="#EAF1FB" font-size="18" font-family="Space Grotesk, sans-serif">JavaScript + HTML</text>
+  <text x="80" y="268" fill="#EAF1FB" font-size="18" font-family="Space Grotesk, sans-serif">Python backend</text>
+  <text x="80" y="312" fill="#EAF1FB" font-size="18" font-family="Space Grotesk, sans-serif">Mobile-friendly web UI</text>
+  <text x="80" y="356" fill="#EAF1FB" font-size="18" font-family="Space Grotesk, sans-serif">UI test automation</text>
+  <text x="80" y="400" fill="#EAF1FB" font-size="18" font-family="Space Grotesk, sans-serif">C programming (preferred)</text>
+  <text x="80" y="444" fill="#EAF1FB" font-size="18" font-family="Space Grotesk, sans-serif">Network management UX</text>
+  <text x="80" y="488" fill="#EAF1FB" font-size="18" font-family="Space Grotesk, sans-serif">Operational reliability</text>
+
+  <rect x="432" y="152" width="462" height="484" rx="14" fill="#17385F" stroke="#4F78A8"/>
+  <text x="456" y="188" fill="#9FC0E3" font-size="13" font-family="JetBrains Mono, monospace">PROJECT EVIDENCE</text>
+
+  <rect x="456" y="206" width="414" height="54" rx="10" fill="#122A49"/>
+  <text x="476" y="240" fill="#EAF1FB" font-size="15" font-family="JetBrains Mono, monospace">web/index.html + web/app.js control dashboard</text>
+
+  <rect x="456" y="266" width="414" height="54" rx="10" fill="#122A49"/>
+  <text x="476" y="300" fill="#EAF1FB" font-size="15" font-family="JetBrains Mono, monospace">backend/server.py + backend/manet_sim.py</text>
+
+  <rect x="456" y="326" width="414" height="54" rx="10" fill="#122A49"/>
+  <text x="476" y="360" fill="#EAF1FB" font-size="15" font-family="JetBrains Mono, monospace">responsive layout and touch-friendly controls</text>
+
+  <rect x="456" y="386" width="414" height="54" rx="10" fill="#122A49"/>
+  <text x="476" y="420" fill="#EAF1FB" font-size="15" font-family="JetBrains Mono, monospace">tests/ui.test.mjs (jsdom render validation)</text>
+
+  <rect x="456" y="446" width="414" height="54" rx="10" fill="#122A49"/>
+  <text x="476" y="480" fill="#EAF1FB" font-size="15" font-family="JetBrains Mono, monospace">native/link_quality.c + ctypes bridge</text>
+
+  <rect x="456" y="506" width="414" height="54" rx="10" fill="#122A49"/>
+  <text x="476" y="540" fill="#EAF1FB" font-size="15" font-family="JetBrains Mono, monospace">route analysis + channel optimization UI</text>
+
+  <rect x="456" y="566" width="414" height="54" rx="10" fill="#122A49"/>
+  <text x="476" y="600" fill="#EAF1FB" font-size="15" font-family="JetBrains Mono, monospace">event timeline + health and KPI snapshots</text>
+
+  <rect x="926" y="152" width="418" height="484" rx="14" fill="#17385F" stroke="#4F78A8"/>
+  <text x="950" y="188" fill="#9FC0E3" font-size="13" font-family="JetBrains Mono, monospace">INTERVIEW TALK TRACK</text>
+
+  <rect x="950" y="214" width="370" height="398" rx="10" fill="#122A49"/>
+  <text x="972" y="250" fill="#EAF1FB" font-size="16" font-family="Space Grotesk, sans-serif">1. Show live topology and degraded links.</text>
+  <text x="972" y="282" fill="#EAF1FB" font-size="16" font-family="Space Grotesk, sans-serif">2. Run channel optimization endpoint.</text>
+  <text x="972" y="314" fill="#EAF1FB" font-size="16" font-family="Space Grotesk, sans-serif">3. Explain route output and bottlenecks.</text>
+  <text x="972" y="346" fill="#EAF1FB" font-size="16" font-family="Space Grotesk, sans-serif">4. Trigger reboot and observe recovery.</text>
+  <text x="972" y="378" fill="#EAF1FB" font-size="16" font-family="Space Grotesk, sans-serif">5. Point to test coverage and native C.</text>
+
+  <text x="972" y="428" fill="#7FF2CF" font-size="15" font-family="JetBrains Mono, monospace">Outcome:</text>
+  <text x="972" y="452" fill="#EAF1FB" font-size="15" font-family="Space Grotesk, sans-serif">Demonstrates practical engineering</text>
+  <text x="972" y="474" fill="#EAF1FB" font-size="15" font-family="Space Grotesk, sans-serif">for embedded network management</text>
+  <text x="972" y="496" fill="#EAF1FB" font-size="15" font-family="Space Grotesk, sans-serif">instead of a generic web project.</text>
+</svg>

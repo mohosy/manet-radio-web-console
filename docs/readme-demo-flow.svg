@@ -1,0 +1,58 @@
+<svg width="1400" height="520" viewBox="0 0 1400 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="flow-arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 Z" fill="#2DD4BF"/>
+    </marker>
+  </defs>
+
+  <rect width="1400" height="520" rx="24" fill="#081426"/>
+  <rect x="24" y="24" width="1352" height="472" rx="20" fill="#0E213B" stroke="#3B5E86" stroke-width="2"/>
+
+  <text x="56" y="84" fill="#EAF1FB" font-size="36" font-family="Space Grotesk, sans-serif">One-Minute Recruiter Demo</text>
+  <text x="56" y="116" fill="#B6CAE3" font-size="16" font-family="Space Grotesk, sans-serif">A deterministic sequence that highlights technical depth and communication clarity.</text>
+
+  <rect x="56" y="156" width="244" height="284" rx="14" fill="#17385F" stroke="#4F78A8"/>
+  <text x="80" y="192" fill="#9FC0E3" font-size="13" font-family="JetBrains Mono, monospace">STEP 1</text>
+  <text x="80" y="224" fill="#EAF1FB" font-size="20" font-family="Space Grotesk, sans-serif">Load State</text>
+  <text x="80" y="252" fill="#CFE0F5" font-size="14" font-family="Space Grotesk, sans-serif">Open dashboard and explain</text>
+  <text x="80" y="272" fill="#CFE0F5" font-size="14" font-family="Space Grotesk, sans-serif">online vs degraded nodes.</text>
+  <text x="80" y="316" fill="#7FF2CF" font-size="13" font-family="JetBrains Mono, monospace">Signal:</text>
+  <text x="80" y="338" fill="#EAF1FB" font-size="14" font-family="Space Grotesk, sans-serif">Operational awareness</text>
+
+  <rect x="324" y="156" width="244" height="284" rx="14" fill="#17385F" stroke="#4F78A8"/>
+  <text x="348" y="192" fill="#9FC0E3" font-size="13" font-family="JetBrains Mono, monospace">STEP 2</text>
+  <text x="348" y="224" fill="#EAF1FB" font-size="20" font-family="Space Grotesk, sans-serif">Inspect Route</text>
+  <text x="348" y="252" fill="#CFE0F5" font-size="14" font-family="Space Grotesk, sans-serif">Run R1 -> R5 and discuss</text>
+  <text x="348" y="272" fill="#CFE0F5" font-size="14" font-family="Space Grotesk, sans-serif">hops, latency, throughput.</text>
+  <text x="348" y="316" fill="#7FF2CF" font-size="13" font-family="JetBrains Mono, monospace">Signal:</text>
+  <text x="348" y="338" fill="#EAF1FB" font-size="14" font-family="Space Grotesk, sans-serif">Graph reasoning</text>
+
+  <rect x="592" y="156" width="244" height="284" rx="14" fill="#17385F" stroke="#4F78A8"/>
+  <text x="616" y="192" fill="#9FC0E3" font-size="13" font-family="JetBrains Mono, monospace">STEP 3</text>
+  <text x="616" y="224" fill="#EAF1FB" font-size="20" font-family="Space Grotesk, sans-serif">Optimize Network</text>
+  <text x="616" y="252" fill="#CFE0F5" font-size="14" font-family="Space Grotesk, sans-serif">Call channel optimizer</text>
+  <text x="616" y="272" fill="#CFE0F5" font-size="14" font-family="Space Grotesk, sans-serif">and compare KPIs.</text>
+  <text x="616" y="316" fill="#7FF2CF" font-size="13" font-family="JetBrains Mono, monospace">Signal:</text>
+  <text x="616" y="338" fill="#EAF1FB" font-size="14" font-family="Space Grotesk, sans-serif">Control feedback loop</text>
+
+  <rect x="860" y="156" width="244" height="284" rx="14" fill="#17385F" stroke="#4F78A8"/>
+  <text x="884" y="192" fill="#9FC0E3" font-size="13" font-family="JetBrains Mono, monospace">STEP 4</text>
+  <text x="884" y="224" fill="#EAF1FB" font-size="20" font-family="Space Grotesk, sans-serif">Failure Drill</text>
+  <text x="884" y="252" fill="#CFE0F5" font-size="14" font-family="Space Grotesk, sans-serif">Trigger node reboot and</text>
+  <text x="884" y="272" fill="#CFE0F5" font-size="14" font-family="Space Grotesk, sans-serif">watch recovery event log.</text>
+  <text x="884" y="316" fill="#7FF2CF" font-size="13" font-family="JetBrains Mono, monospace">Signal:</text>
+  <text x="884" y="338" fill="#EAF1FB" font-size="14" font-family="Space Grotesk, sans-serif">Reliability mindset</text>
+
+  <rect x="1128" y="156" width="244" height="284" rx="14" fill="#17385F" stroke="#4F78A8"/>
+  <text x="1152" y="192" fill="#9FC0E3" font-size="13" font-family="JetBrains Mono, monospace">STEP 5</text>
+  <text x="1152" y="224" fill="#EAF1FB" font-size="20" font-family="Space Grotesk, sans-serif">Close with Tests</text>
+  <text x="1152" y="252" fill="#CFE0F5" font-size="14" font-family="Space Grotesk, sans-serif">Show API + UI + native</text>
+  <text x="1152" y="272" fill="#CFE0F5" font-size="14" font-family="Space Grotesk, sans-serif">automation evidence.</text>
+  <text x="1152" y="316" fill="#7FF2CF" font-size="13" font-family="JetBrains Mono, monospace">Signal:</text>
+  <text x="1152" y="338" fill="#EAF1FB" font-size="14" font-family="Space Grotesk, sans-serif">Engineering rigor</text>
+
+  <path d="M300 298H324" stroke="#2DD4BF" stroke-width="3" marker-end="url(#flow-arrow)"/>
+  <path d="M568 298H592" stroke="#2DD4BF" stroke-width="3" marker-end="url(#flow-arrow)"/>
+  <path d="M836 298H860" stroke="#2DD4BF" stroke-width="3" marker-end="url(#flow-arrow)"/>
+  <path d="M1104 298H1128" stroke="#2DD4BF" stroke-width="3" marker-end="url(#flow-arrow)"/>
+</svg>

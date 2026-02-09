@@ -1,34 +1,37 @@
-<svg width="1280" height="460" viewBox="0 0 1280 460" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="1280" height="460" rx="20" fill="#0A1426"/>
-  <rect x="24" y="24" width="1232" height="412" rx="16" fill="#0F1F37" stroke="#355276" stroke-width="2"/>
+<svg width="1400" height="540" viewBox="0 0 1400 540" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1400" height="540" rx="24" fill="#081426"/>
+  <rect x="24" y="24" width="1352" height="492" rx="20" fill="#0E213B" stroke="#3B5E86" stroke-width="2"/>
 
-  <text x="52" y="62" fill="#E7EDF8" font-size="28" font-family="Space Grotesk, sans-serif">UI Capability Snapshot</text>
+  <text x="56" y="80" fill="#EAF1FB" font-size="34" font-family="Space Grotesk, sans-serif">UI Capability Snapshot</text>
+  <text x="56" y="110" fill="#B6CAE3" font-size="16" font-family="Space Grotesk, sans-serif">What a reviewer sees in the dashboard during a live demo.</text>
 
-  <rect x="52" y="92" width="384" height="320" rx="12" fill="#173054" stroke="#3E628E"/>
-  <text x="74" y="124" fill="#9EB2CE" font-size="13" font-family="JetBrains Mono, monospace">TOPOLOGY + LINK TELEMETRY</text>
-  <text x="74" y="154" fill="#E7EDF8" font-size="21" font-family="Space Grotesk, sans-serif">Live RF Link Quality</text>
-  <text x="74" y="186" fill="#C3D4EA" font-size="15" font-family="Space Grotesk, sans-serif">Per-link score, ETX, latency, and throughput</text>
-  <rect x="74" y="212" width="340" height="180" rx="10" fill="#12243E"/>
-  <text x="92" y="244" fill="#D9E7F7" font-size="13" font-family="JetBrains Mono, monospace">R1-R2  score=0.81  etx=1.23  56.2Mbps</text>
-  <text x="92" y="270" fill="#D9E7F7" font-size="13" font-family="JetBrains Mono, monospace">R2-R3  score=0.74  etx=1.35  49.8Mbps</text>
-  <text x="92" y="296" fill="#D9E7F7" font-size="13" font-family="JetBrains Mono, monospace">R2-R4  score=0.39  etx=2.56  21.4Mbps</text>
+  <rect x="56" y="138" width="420" height="344" rx="14" fill="#17385F" stroke="#4F78A8"/>
+  <text x="80" y="172" fill="#9FC0E3" font-size="13" font-family="JetBrains Mono, monospace">TOPOLOGY + LINK TELEMETRY</text>
+  <text x="80" y="204" fill="#EAF1FB" font-size="25" font-family="Space Grotesk, sans-serif">Live RF Link Quality</text>
+  <text x="80" y="232" fill="#CFE0F5" font-size="15" font-family="Space Grotesk, sans-serif">Per-link score, ETX, latency, throughput, and distance.</text>
+  <rect x="80" y="254" width="372" height="202" rx="10" fill="#122A49"/>
+  <text x="100" y="286" fill="#EAF1FB" font-size="13" font-family="JetBrains Mono, monospace">R1-R2 | score 0.81 | etx 1.23 | 56.2 Mbps</text>
+  <text x="100" y="312" fill="#EAF1FB" font-size="13" font-family="JetBrains Mono, monospace">R2-R3 | score 0.74 | etx 1.35 | 49.8 Mbps</text>
+  <text x="100" y="338" fill="#EAF1FB" font-size="13" font-family="JetBrains Mono, monospace">R2-R4 | score 0.39 | etx 2.56 | 21.4 Mbps</text>
+  <text x="100" y="364" fill="#7FF2CF" font-size="13" font-family="JetBrains Mono, monospace">degraded links highlighted for ops review</text>
 
-  <rect x="448" y="92" width="384" height="320" rx="12" fill="#173054" stroke="#3E628E"/>
-  <text x="470" y="124" fill="#9EB2CE" font-size="13" font-family="JetBrains Mono, monospace">ROUTE ANALYSIS</text>
-  <text x="470" y="154" fill="#E7EDF8" font-size="21" font-family="Space Grotesk, sans-serif">Multi-hop Path Inspector</text>
-  <text x="470" y="186" fill="#C3D4EA" font-size="15" font-family="Space Grotesk, sans-serif">Dijkstra path, bottleneck throughput, hop latency</text>
-  <rect x="470" y="212" width="340" height="180" rx="10" fill="#12243E"/>
-  <text x="488" y="244" fill="#7FF2CF" font-size="13" font-family="JetBrains Mono, monospace">R1 -> R5</text>
-  <text x="488" y="270" fill="#D9E7F7" font-size="13" font-family="JetBrains Mono, monospace">path: R1 -> R2 -> R5</text>
-  <text x="488" y="296" fill="#D9E7F7" font-size="13" font-family="JetBrains Mono, monospace">latency: 12.40ms</text>
-  <text x="488" y="322" fill="#D9E7F7" font-size="13" font-family="JetBrains Mono, monospace">bottleneck: 39.20Mbps</text>
+  <rect x="490" y="138" width="420" height="344" rx="14" fill="#17385F" stroke="#4F78A8"/>
+  <text x="514" y="172" fill="#9FC0E3" font-size="13" font-family="JetBrains Mono, monospace">ROUTE ANALYSIS</text>
+  <text x="514" y="204" fill="#EAF1FB" font-size="25" font-family="Space Grotesk, sans-serif">Multi-hop Path Inspector</text>
+  <text x="514" y="232" fill="#CFE0F5" font-size="15" font-family="Space Grotesk, sans-serif">Path, estimated latency, and bottleneck throughput.</text>
+  <rect x="514" y="254" width="372" height="202" rx="10" fill="#122A49"/>
+  <text x="534" y="286" fill="#7FF2CF" font-size="13" font-family="JetBrains Mono, monospace">route request: R1 -> R5</text>
+  <text x="534" y="312" fill="#EAF1FB" font-size="13" font-family="JetBrains Mono, monospace">path: R1 -> R2 -> R5</text>
+  <text x="534" y="338" fill="#EAF1FB" font-size="13" font-family="JetBrains Mono, monospace">hops: 2 | cost: 2.471</text>
+  <text x="534" y="364" fill="#EAF1FB" font-size="13" font-family="JetBrains Mono, monospace">latency: 12.40 ms | bottleneck: 39.20 Mbps</text>
 
-  <rect x="844" y="92" width="384" height="320" rx="12" fill="#173054" stroke="#3E628E"/>
-  <text x="866" y="124" fill="#9EB2CE" font-size="13" font-family="JetBrains Mono, monospace">OPERATIONS VIEW</text>
-  <text x="866" y="154" fill="#E7EDF8" font-size="21" font-family="Space Grotesk, sans-serif">Optimization + Event Log</text>
-  <text x="866" y="186" fill="#C3D4EA" font-size="15" font-family="Space Grotesk, sans-serif">Channel planner + timeline of network actions</text>
-  <rect x="866" y="212" width="340" height="180" rx="10" fill="#12243E"/>
-  <text x="884" y="244" fill="#D9E7F7" font-size="13" font-family="JetBrains Mono, monospace">tick=365 channel-optimize applied</text>
-  <text x="884" y="270" fill="#D9E7F7" font-size="13" font-family="JetBrains Mono, monospace">tick=366 R2 tx_power updated</text>
-  <text x="884" y="296" fill="#D9E7F7" font-size="13" font-family="JetBrains Mono, monospace">tick=367 R4 recovered</text>
+  <rect x="924" y="138" width="420" height="344" rx="14" fill="#17385F" stroke="#4F78A8"/>
+  <text x="948" y="172" fill="#9FC0E3" font-size="13" font-family="JetBrains Mono, monospace">OPERATIONS VIEW</text>
+  <text x="948" y="204" fill="#EAF1FB" font-size="25" font-family="Space Grotesk, sans-serif">Optimizer + Event Timeline</text>
+  <text x="948" y="232" fill="#CFE0F5" font-size="15" font-family="Space Grotesk, sans-serif">Operational changes with audit-friendly chronology.</text>
+  <rect x="948" y="254" width="372" height="202" rx="10" fill="#122A49"/>
+  <text x="968" y="286" fill="#EAF1FB" font-size="13" font-family="JetBrains Mono, monospace">tick 365 | channel optimize applied</text>
+  <text x="968" y="312" fill="#EAF1FB" font-size="13" font-family="JetBrains Mono, monospace">tick 366 | R2 tx_power updated to 28.0</text>
+  <text x="968" y="338" fill="#EAF1FB" font-size="13" font-family="JetBrains Mono, monospace">tick 367 | R4 reboot initiated</text>
+  <text x="968" y="364" fill="#EAF1FB" font-size="13" font-family="JetBrains Mono, monospace">tick 368 | R4 back online</text>
 </svg>

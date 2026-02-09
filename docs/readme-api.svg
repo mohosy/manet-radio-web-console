@@ -1,0 +1,60 @@
+<svg width="1400" height="680" viewBox="0 0 1400 680" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="api-arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 Z" fill="#2DD4BF"/>
+    </marker>
+  </defs>
+
+  <rect width="1400" height="680" rx="24" fill="#081426"/>
+  <rect x="24" y="24" width="1352" height="632" rx="20" fill="#0E213B" stroke="#3B5E86" stroke-width="2"/>
+
+  <text x="56" y="84" fill="#EAF1FB" font-size="36" font-family="Space Grotesk, sans-serif">API Surface and Data Contracts</text>
+  <text x="56" y="116" fill="#B6CAE3" font-size="16" font-family="Space Grotesk, sans-serif">Endpoint groups are optimized for dashboard polling, event streaming, and operator actions.</text>
+
+  <rect x="56" y="152" width="404" height="470" rx="14" fill="#17385F" stroke="#4F78A8"/>
+  <text x="80" y="188" fill="#9FC0E3" font-size="13" font-family="JetBrains Mono, monospace">READ APIs</text>
+  <text x="80" y="220" fill="#EAF1FB" font-size="18" font-family="JetBrains Mono, monospace">GET /api/health</text>
+  <text x="80" y="246" fill="#EAF1FB" font-size="18" font-family="JetBrains Mono, monospace">GET /api/state</text>
+  <text x="80" y="272" fill="#EAF1FB" font-size="18" font-family="JetBrains Mono, monospace">GET /api/route?src=R1&amp;dst=R5</text>
+  <text x="80" y="298" fill="#EAF1FB" font-size="18" font-family="JetBrains Mono, monospace">GET /api/events/log</text>
+  <text x="80" y="324" fill="#EAF1FB" font-size="18" font-family="JetBrains Mono, monospace">GET /api/events (SSE)</text>
+
+  <text x="80" y="372" fill="#9FC0E3" font-size="13" font-family="JetBrains Mono, monospace">WRITE APIs</text>
+  <text x="80" y="404" fill="#EAF1FB" font-size="18" font-family="JetBrains Mono, monospace">POST /api/node/&lt;id&gt;/tx_power</text>
+  <text x="80" y="430" fill="#EAF1FB" font-size="18" font-family="JetBrains Mono, monospace">POST /api/node/&lt;id&gt;/channel</text>
+  <text x="80" y="456" fill="#EAF1FB" font-size="18" font-family="JetBrains Mono, monospace">POST /api/node/&lt;id&gt;/reboot</text>
+  <text x="80" y="482" fill="#EAF1FB" font-size="18" font-family="JetBrains Mono, monospace">POST /api/network/optimize_channels</text>
+
+  <rect x="80" y="520" width="356" height="84" rx="10" fill="#123355"/>
+  <text x="100" y="552" fill="#CFE0F5" font-size="14" font-family="Space Grotesk, sans-serif">Design goal: keep payloads dashboard-friendly</text>
+  <text x="100" y="574" fill="#CFE0F5" font-size="14" font-family="Space Grotesk, sans-serif">while preserving operational detail.</text>
+
+  <rect x="520" y="152" width="820" height="222" rx="14" fill="#17385F" stroke="#4F78A8"/>
+  <text x="544" y="188" fill="#9FC0E3" font-size="13" font-family="JetBrains Mono, monospace">STATE PAYLOAD SHAPE (excerpt)</text>
+  <rect x="544" y="206" width="772" height="146" rx="10" fill="#122A49"/>
+  <text x="564" y="234" fill="#EAF1FB" font-size="14" font-family="JetBrains Mono, monospace">{ "tick": 431, "kpis": {"connectivity_ratio": 1.0, "avg_link_score": 0.62},</text>
+  <text x="564" y="258" fill="#EAF1FB" font-size="14" font-family="JetBrains Mono, monospace">  "nodes": [{"node_id":"R1","status":"online","channel":1}],</text>
+  <text x="564" y="282" fill="#EAF1FB" font-size="14" font-family="JetBrains Mono, monospace">  "links": [{"a":"R1","b":"R2","score":0.81,"etx":1.23}],</text>
+  <text x="564" y="306" fill="#EAF1FB" font-size="14" font-family="JetBrains Mono, monospace">  "routing": {"root":"R1","routes":{...}}, "events": [{"kind":"node-update"}] }</text>
+
+  <rect x="520" y="398" width="396" height="224" rx="14" fill="#17385F" stroke="#4F78A8"/>
+  <text x="544" y="434" fill="#9FC0E3" font-size="13" font-family="JetBrains Mono, monospace">ROUTE RESPONSE (excerpt)</text>
+  <rect x="544" y="452" width="348" height="150" rx="10" fill="#122A49"/>
+  <text x="564" y="480" fill="#EAF1FB" font-size="14" font-family="JetBrains Mono, monospace">{ "src":"R1", "dst":"R5",</text>
+  <text x="564" y="504" fill="#EAF1FB" font-size="14" font-family="JetBrains Mono, monospace">  "reachable": true,</text>
+  <text x="564" y="528" fill="#EAF1FB" font-size="14" font-family="JetBrains Mono, monospace">  "path": ["R1","R2","R5"],</text>
+  <text x="564" y="552" fill="#EAF1FB" font-size="14" font-family="JetBrains Mono, monospace">  "estimated_latency_ms": 12.4,</text>
+  <text x="564" y="576" fill="#EAF1FB" font-size="14" font-family="JetBrains Mono, monospace">  "bottleneck_mbps": 39.2 }</text>
+
+  <rect x="944" y="398" width="396" height="224" rx="14" fill="#17385F" stroke="#4F78A8"/>
+  <text x="968" y="434" fill="#9FC0E3" font-size="13" font-family="JetBrains Mono, monospace">OPTIMIZER RESPONSE (excerpt)</text>
+  <rect x="968" y="452" width="348" height="150" rx="10" fill="#122A49"/>
+  <text x="988" y="480" fill="#EAF1FB" font-size="14" font-family="JetBrains Mono, monospace">{ "changed": [{"node":"R2",</text>
+  <text x="988" y="504" fill="#EAF1FB" font-size="14" font-family="JetBrains Mono, monospace">  "from":1,"to":3}],</text>
+  <text x="988" y="528" fill="#EAF1FB" font-size="14" font-family="JetBrains Mono, monospace">  "routing": {"connectivity_ratio":1.0},</text>
+  <text x="988" y="552" fill="#EAF1FB" font-size="14" font-family="JetBrains Mono, monospace">  "kpis": {"avg_link_score":0.66}</text>
+  <text x="988" y="576" fill="#EAF1FB" font-size="14" font-family="JetBrains Mono, monospace">}</text>
+
+  <path d="M460 230H520" stroke="#2DD4BF" stroke-width="3" marker-end="url(#api-arrow)"/>
+  <path d="M460 450H520" stroke="#2DD4BF" stroke-width="3" marker-end="url(#api-arrow)"/>
+</svg>

@@ -1,43 +1,62 @@
-<svg width="1280" height="460" viewBox="0 0 1280 460" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="1400" height="620" viewBox="0 0 1400 620" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0A1324"/>
-      <stop offset="100%" stop-color="#142B49"/>
+    <linearGradient id="hero-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#081426"/>
+      <stop offset="100%" stop-color="#123357"/>
+    </linearGradient>
+    <linearGradient id="hero-card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#17385F"/>
+      <stop offset="100%" stop-color="#102A48"/>
     </linearGradient>
   </defs>
-  <rect width="1280" height="460" rx="22" fill="url(#bg)"/>
-  <rect x="26" y="24" width="1228" height="412" rx="18" fill="#0C1A31" stroke="#39547A" stroke-width="2"/>
 
-  <text x="58" y="88" fill="#2DD4BF" font-size="14" font-family="JetBrains Mono, monospace">EMBEDDED SOFTWARE • NETWORK MANAGEMENT • MANET</text>
-  <text x="58" y="132" fill="#E7EDF8" font-size="44" font-family="Space Grotesk, sans-serif">MANET Radio Web Console</text>
-  <text x="58" y="170" fill="#9EB2CE" font-size="20" font-family="Space Grotesk, sans-serif">Silvus-style embedded web interface with Python control APIs, C RF metrics,</text>
-  <text x="58" y="198" fill="#9EB2CE" font-size="20" font-family="Space Grotesk, sans-serif">route analytics, live telemetry, and UI/API automation tests.</text>
+  <rect width="1400" height="620" rx="24" fill="url(#hero-bg)"/>
+  <rect x="24" y="24" width="1352" height="572" rx="20" fill="#0E213B" stroke="#3B5E86" stroke-width="2"/>
 
-  <rect x="58" y="232" width="360" height="86" rx="12" fill="#152744" stroke="#3A5A84"/>
-  <text x="80" y="264" fill="#9EB2CE" font-size="13" font-family="JetBrains Mono, monospace">REAL-TIME TELEMETRY</text>
-  <text x="80" y="297" fill="#E7EDF8" font-size="28" font-family="Space Grotesk, sans-serif">SSE + REST Control Plane</text>
+  <text x="56" y="86" fill="#2DD4BF" font-size="15" font-family="JetBrains Mono, monospace">EMBEDDED SOFTWARE | WEB INTERFACE | NETWORK MANAGEMENT</text>
+  <text x="56" y="136" fill="#EAF1FB" font-size="52" font-family="Space Grotesk, sans-serif">MANET Radio Web Console</text>
+  <text x="56" y="176" fill="#B6CAE3" font-size="20" font-family="Space Grotesk, sans-serif">Production-style project for embedded web-interface roles:</text>
+  <text x="56" y="206" fill="#B6CAE3" font-size="20" font-family="Space Grotesk, sans-serif">real-time fleet telemetry, control-plane APIs, and route intelligence.</text>
 
-  <rect x="438" y="232" width="360" height="86" rx="12" fill="#152744" stroke="#3A5A84"/>
-  <text x="460" y="264" fill="#9EB2CE" font-size="13" font-family="JetBrains Mono, monospace">ROUTING INTELLIGENCE</text>
-  <text x="460" y="297" fill="#E7EDF8" font-size="28" font-family="Space Grotesk, sans-serif">Dijkstra + ETX/Latency</text>
+  <rect x="56" y="242" width="420" height="126" rx="14" fill="url(#hero-card)" stroke="#4F78A8"/>
+  <text x="80" y="276" fill="#9FC0E3" font-size="13" font-family="JetBrains Mono, monospace">CONTROL PLANE</text>
+  <text x="80" y="308" fill="#EAF1FB" font-size="28" font-family="Space Grotesk, sans-serif">REST + SSE API</text>
+  <text x="80" y="336" fill="#CFE0F5" font-size="16" font-family="Space Grotesk, sans-serif">State snapshots, node operations, route queries,</text>
+  <text x="80" y="358" fill="#CFE0F5" font-size="16" font-family="Space Grotesk, sans-serif">and event streaming for live dashboards.</text>
 
-  <rect x="818" y="232" width="400" height="86" rx="12" fill="#152744" stroke="#3A5A84"/>
-  <text x="840" y="264" fill="#9EB2CE" font-size="13" font-family="JetBrains Mono, monospace">NATIVE PERFORMANCE BLOCK</text>
-  <text x="840" y="297" fill="#E7EDF8" font-size="28" font-family="Space Grotesk, sans-serif">C Link Quality + Capacity Engine</text>
+  <rect x="490" y="242" width="420" height="126" rx="14" fill="url(#hero-card)" stroke="#4F78A8"/>
+  <text x="514" y="276" fill="#9FC0E3" font-size="13" font-family="JetBrains Mono, monospace">ROUTING + OPTIMIZATION</text>
+  <text x="514" y="308" fill="#EAF1FB" font-size="28" font-family="Space Grotesk, sans-serif">Dijkstra and Channel Planner</text>
+  <text x="514" y="336" fill="#CFE0F5" font-size="16" font-family="Space Grotesk, sans-serif">Computes best paths with ETX and latency costs,</text>
+  <text x="514" y="358" fill="#CFE0F5" font-size="16" font-family="Space Grotesk, sans-serif">then proposes better channel allocations.</text>
 
-  <rect x="58" y="338" width="180" height="62" rx="10" fill="#1A3152"/>
-  <text x="76" y="366" fill="#9EB2CE" font-size="12" font-family="JetBrains Mono, monospace">API ENDPOINTS</text>
-  <text x="76" y="390" fill="#E7EDF8" font-size="24" font-family="Space Grotesk, sans-serif">9</text>
+  <rect x="924" y="242" width="420" height="126" rx="14" fill="url(#hero-card)" stroke="#4F78A8"/>
+  <text x="948" y="276" fill="#9FC0E3" font-size="13" font-family="JetBrains Mono, monospace">NATIVE RF METRICS</text>
+  <text x="948" y="308" fill="#EAF1FB" font-size="28" font-family="Space Grotesk, sans-serif">C Library via ctypes</text>
+  <text x="948" y="336" fill="#CFE0F5" font-size="16" font-family="Space Grotesk, sans-serif">Link score and capacity models run in C,</text>
+  <text x="948" y="358" fill="#CFE0F5" font-size="16" font-family="Space Grotesk, sans-serif">with safe Python fallback behavior.</text>
 
-  <rect x="258" y="338" width="180" height="62" rx="10" fill="#1A3152"/>
-  <text x="276" y="366" fill="#9EB2CE" font-size="12" font-family="JetBrains Mono, monospace">AUTOMATED TESTS</text>
-  <text x="276" y="390" fill="#E7EDF8" font-size="24" font-family="Space Grotesk, sans-serif">8</text>
+  <rect x="56" y="394" width="250" height="170" rx="12" fill="#17385F" stroke="#4F78A8"/>
+  <text x="80" y="430" fill="#9FC0E3" font-size="12" font-family="JetBrains Mono, monospace">ENDPOINTS</text>
+  <text x="80" y="475" fill="#EAF1FB" font-size="42" font-family="Space Grotesk, sans-serif">9</text>
+  <text x="80" y="505" fill="#CFE0F5" font-size="14" font-family="Space Grotesk, sans-serif">health, state, route, events,</text>
+  <text x="80" y="525" fill="#CFE0F5" font-size="14" font-family="Space Grotesk, sans-serif">node updates, optimizer</text>
 
-  <rect x="458" y="338" width="180" height="62" rx="10" fill="#1A3152"/>
-  <text x="476" y="366" fill="#9EB2CE" font-size="12" font-family="JetBrains Mono, monospace">STACK</text>
-  <text x="476" y="390" fill="#E7EDF8" font-size="24" font-family="Space Grotesk, sans-serif">JS + Python + C</text>
+  <rect x="322" y="394" width="250" height="170" rx="12" fill="#17385F" stroke="#4F78A8"/>
+  <text x="346" y="430" fill="#9FC0E3" font-size="12" font-family="JetBrains Mono, monospace">TEST CASES</text>
+  <text x="346" y="475" fill="#EAF1FB" font-size="42" font-family="Space Grotesk, sans-serif">8</text>
+  <text x="346" y="505" fill="#CFE0F5" font-size="14" font-family="Space Grotesk, sans-serif">Python API/native tests</text>
+  <text x="346" y="525" fill="#CFE0F5" font-size="14" font-family="Space Grotesk, sans-serif">plus JS DOM UI checks</text>
 
-  <rect x="658" y="338" width="240" height="62" rx="10" fill="#1A3152"/>
-  <text x="676" y="366" fill="#9EB2CE" font-size="12" font-family="JetBrains Mono, monospace">PRIMARY USE CASE</text>
-  <text x="676" y="390" fill="#E7EDF8" font-size="24" font-family="Space Grotesk, sans-serif">Radio Fleet Management</text>
+  <rect x="588" y="394" width="250" height="170" rx="12" fill="#17385F" stroke="#4F78A8"/>
+  <text x="612" y="430" fill="#9FC0E3" font-size="12" font-family="JetBrains Mono, monospace">TECH STACK</text>
+  <text x="612" y="475" fill="#EAF1FB" font-size="42" font-family="Space Grotesk, sans-serif">JS / PY / C</text>
+  <text x="612" y="505" fill="#CFE0F5" font-size="14" font-family="Space Grotesk, sans-serif">mobile web + backend API</text>
+  <text x="612" y="525" fill="#CFE0F5" font-size="14" font-family="Space Grotesk, sans-serif">+ native RF math</text>
+
+  <rect x="854" y="394" width="490" height="170" rx="12" fill="#17385F" stroke="#4F78A8"/>
+  <text x="878" y="430" fill="#9FC0E3" font-size="12" font-family="JetBrains Mono, monospace">DEMO NARRATIVE</text>
+  <text x="878" y="468" fill="#EAF1FB" font-size="30" font-family="Space Grotesk, sans-serif">Operate a radio mesh under degraded RF</text>
+  <text x="878" y="498" fill="#CFE0F5" font-size="16" font-family="Space Grotesk, sans-serif">Inspect topology and links, optimize channels,</text>
+  <text x="878" y="522" fill="#CFE0F5" font-size="16" font-family="Space Grotesk, sans-serif">validate route recovery, and explain system tradeoffs.</text>
 </svg>

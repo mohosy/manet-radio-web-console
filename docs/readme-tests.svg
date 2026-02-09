@@ -1,0 +1,47 @@
+<svg width="1400" height="620" viewBox="0 0 1400 620" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1400" height="620" rx="24" fill="#081426"/>
+  <rect x="24" y="24" width="1352" height="572" rx="20" fill="#0E213B" stroke="#3B5E86" stroke-width="2"/>
+
+  <text x="56" y="84" fill="#EAF1FB" font-size="36" font-family="Space Grotesk, sans-serif">Verification Strategy</text>
+  <text x="56" y="116" fill="#B6CAE3" font-size="16" font-family="Space Grotesk, sans-serif">Automated checks target API correctness, native metric behavior, and frontend rendering contracts.</text>
+
+  <rect x="56" y="156" width="388" height="408" rx="14" fill="#17385F" stroke="#4F78A8"/>
+  <text x="80" y="192" fill="#9FC0E3" font-size="13" font-family="JetBrains Mono, monospace">TEST INVENTORY</text>
+
+  <rect x="80" y="216" width="340" height="96" rx="10" fill="#122A49"/>
+  <text x="102" y="248" fill="#7FF2CF" font-size="14" font-family="JetBrains Mono, monospace">Python API tests: 4</text>
+  <text x="102" y="272" fill="#EAF1FB" font-size="14" font-family="Space Grotesk, sans-serif">state payload, tx power update,</text>
+  <text x="102" y="292" fill="#EAF1FB" font-size="14" font-family="Space Grotesk, sans-serif">route endpoint, channel optimizer</text>
+
+  <rect x="80" y="326" width="340" height="96" rx="10" fill="#122A49"/>
+  <text x="102" y="358" fill="#7FF2CF" font-size="14" font-family="JetBrains Mono, monospace">Native metric tests: 3</text>
+  <text x="102" y="382" fill="#EAF1FB" font-size="14" font-family="Space Grotesk, sans-serif">same-channel advantage, distance</text>
+  <text x="102" y="402" fill="#EAF1FB" font-size="14" font-family="Space Grotesk, sans-serif">effect, capacity monotonicity</text>
+
+  <rect x="80" y="436" width="340" height="96" rx="10" fill="#122A49"/>
+  <text x="102" y="468" fill="#7FF2CF" font-size="14" font-family="JetBrains Mono, monospace">UI render tests: 1</text>
+  <text x="102" y="492" fill="#EAF1FB" font-size="14" font-family="Space Grotesk, sans-serif">DOM update contract using jsdom</text>
+  <text x="102" y="512" fill="#EAF1FB" font-size="14" font-family="Space Grotesk, sans-serif">for telemetry and route panels</text>
+
+  <rect x="492" y="156" width="852" height="408" rx="14" fill="#17385F" stroke="#4F78A8"/>
+  <text x="516" y="192" fill="#9FC0E3" font-size="13" font-family="JetBrains Mono, monospace">QUALITY PYRAMID</text>
+
+  <polygon points="918,236 1196,516 640,516" fill="#122A49" stroke="#4F78A8" stroke-width="2"/>
+
+  <text x="892" y="286" fill="#EAF1FB" font-size="20" font-family="Space Grotesk, sans-serif">UI Contract</text>
+  <text x="872" y="310" fill="#CFE0F5" font-size="14" font-family="Space Grotesk, sans-serif">Validate rendering and panel</text>
+  <text x="874" y="330" fill="#CFE0F5" font-size="14" font-family="Space Grotesk, sans-serif">population from live state.</text>
+
+  <text x="862" y="376" fill="#EAF1FB" font-size="20" font-family="Space Grotesk, sans-serif">API Integration</text>
+  <text x="824" y="400" fill="#CFE0F5" font-size="14" font-family="Space Grotesk, sans-serif">Exercise server endpoints with a real</text>
+  <text x="828" y="420" fill="#CFE0F5" font-size="14" font-family="Space Grotesk, sans-serif">ThreadingHTTPServer in tests.</text>
+
+  <text x="862" y="468" fill="#EAF1FB" font-size="20" font-family="Space Grotesk, sans-serif">Native Math</text>
+  <text x="800" y="492" fill="#CFE0F5" font-size="14" font-family="Space Grotesk, sans-serif">Prove metric behavior expectations for</text>
+  <text x="812" y="512" fill="#CFE0F5" font-size="14" font-family="Space Grotesk, sans-serif">RF score and throughput functions.</text>
+
+  <rect x="516" y="236" width="102" height="280" rx="10" fill="#123355"/>
+  <text x="540" y="274" fill="#EAF1FB" font-size="34" font-family="Space Grotesk, sans-serif">8</text>
+  <text x="532" y="300" fill="#CFE0F5" font-size="12" font-family="JetBrains Mono, monospace">total</text>
+  <text x="530" y="322" fill="#CFE0F5" font-size="12" font-family="JetBrains Mono, monospace">tests</text>
+</svg>
